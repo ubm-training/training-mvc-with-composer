@@ -1,0 +1,26 @@
+{
+    "name": "webhoanhao/training-mvc-with-composer",
+    "description": "Huong dan su dung Composer trong mo hinh MVC",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "webhoanhao",
+            "email": "webhoanhao@gmail.com"
+        }
+    ],
+    "require": {
+        "altorouter/altorouter": "^1.2",
+        "ext-mysqli": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "WebHoanHao\\TrainingMvc\\Controller\\": "app/Controllers",
+            "WebHoanHao\\TrainingMvc\\Models\\": "app/Models"
+        },
+        "files": [
+            "app/db_connection.php",
+            "routes/web.php"
+        ]
+    }
+}
